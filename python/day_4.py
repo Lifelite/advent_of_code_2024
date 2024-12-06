@@ -1,25 +1,9 @@
 import dataclasses
-import enum
-from enum import Enum
 from pathlib import Path
 
 input_path = Path(__file__).parent.parent / "input" / "day4.txt"
 challenge_input = open(input_path).read()
 
-
-# def find_words(c_input):
-#     input_list = c_input.split("\n")
-#     directions = [[-1,1], [0,1], [1,1], [-1,0], [1,0], [-1,-1], [0,-1], [1,-1]]
-#     words = ["XMAS", "SAMX"]
-#     columns = []
-#     for index, line in enumerate(input_list):
-#
-#         for col_index, letter in enumerate(line):
-#             columns.append('')
-#
-#             columns[col_index] += letter
-#     pass
-#
 @dataclasses.dataclass
 class Directions:
     UP = [0, -1]
